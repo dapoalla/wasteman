@@ -1,0 +1,32 @@
+# PHP/XAMPP project ignores
+
+# OS and editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Logs and runtime files
+*.log
+
+# Archives and backups
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Dependency directories
+vendor/
+node_modules/
+
+# Environment and local configs
+.env
+.env.*
+
+# Composer artifacts
+composer.lock
+
+# Cache/temp
+.cache/
+tmp/
+temp/

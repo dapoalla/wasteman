@@ -22,6 +22,7 @@ node_modules/
 # Environment and local configs
 .env
 .env.*
+config.php
 
 # Composer artifacts
 composer.lock

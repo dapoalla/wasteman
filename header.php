@@ -84,6 +84,9 @@ $ring_theme_color_class = $subsidiary_name == 'ITECSOL' ? 'ring-cyan-500' : 'rin
                 <a href="rates.php" class="flex items-center px-6 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white <?php if($page == 'rates.php') echo 'bg-gray-900/80 border-l-4 border-'.$theme_color_class; ?>">
                     <span class="material-symbols-outlined mr-3">price_change</span> Global Rates
                 </a>
+                <a href="backup_restore.php" class="flex items-center px-6 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white <?php if($page == 'backup_restore.php') echo 'bg-gray-900/80 border-l-4 border-'.$theme_color_class; ?>">
+                    <span class="material-symbols-outlined mr-3">database</span> Backup & Restore
+                </a>
                 <?php endif; ?>
             </nav>
         </aside>

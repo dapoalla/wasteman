@@ -125,28 +125,6 @@ function getStatusBadge($status) {
     </div>
 </div>
 
-// ... existing private.php code ...
-
-// Fetch dropdown options
-function getDropdownOptions($conn, $category) {
-    $options = [];
-    $stmt = $conn->prepare("SELECT value FROM dropdown_options WHERE category = ? ORDER BY display_order, value");
-    $stmt->bind_param("s", $category);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    while ($row = $result->fetch_assoc()) {
-        $options[] = $row['value'];
-    }
-    return $options;
-}
-
-$bin_types = getDropdownOptions($conn, 'bin_types');
-$customer_types = getDropdownOptions($conn, 'customer_types');
-$property_types = getDropdownOptions($conn, 'property_types');
-$compliance_options = getDropdownOptions($conn, 'compliance_status');
-
-// ... rest of the code ...
-
 <?php 
 $conn->close();
 require_once "footer.php"; 
